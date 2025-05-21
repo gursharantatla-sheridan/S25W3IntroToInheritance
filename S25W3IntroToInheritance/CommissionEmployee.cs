@@ -40,6 +40,22 @@ namespace S25W3IntroToInheritance
 			set { _commissionRate = value; }
 		}
 
+		public CommissionEmployee(int id, string name, double grossSales, double commissionRate)
+		{
+			Id = id;
+			Name = name;
+			GrossSales = grossSales;
+			CommissionRate = commissionRate;
+		}
 
+		public double Earnings()
+		{
+			return GrossSales * CommissionRate;
+		}
+
+        public override string ToString()
+        {
+			return $"Id = {Id}\nName = {Name}\nGross Sales = {GrossSales}\nCommission Rate = {CommissionRate}";
+        }
 	}
 }
