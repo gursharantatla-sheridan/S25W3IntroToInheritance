@@ -55,7 +55,7 @@ namespace S25W3IntroToInheritance
 
         public override string ToString()
         {
-			return $"Id = {Id}\nName = {Name}\nGross Sales = {GrossSales}\nCommission Rate = {CommissionRate}";
+			return $"Id = {Id}\nName = {Name}\nGross Sales = {GrossSales:C}\nCommission Rate = {CommissionRate:P}";
         }
 	}
 }
